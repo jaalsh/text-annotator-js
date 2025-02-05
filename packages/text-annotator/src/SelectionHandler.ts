@@ -274,7 +274,8 @@ export const SelectionHandler = (
         store.addAnnotation({
           id: currentTarget.annotation,
           bodies: [],
-          target: currentTarget
+          target: currentTarget,
+          metadataTag: undefined
         });
 
         selection.userSelect(currentTarget.annotation, cloneKeyboardEvent(evt));
@@ -331,7 +332,8 @@ export const SelectionHandler = (
       store.addAnnotation({
         id: currentTarget.annotation,
         bodies: [],
-        target: currentTarget
+        target: currentTarget,
+        metadataTag: undefined
       });
       return;
     }
